@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>cozyfy.jo</title>
+<style>
+  body {
+    background: #121212;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+    text-align: center;
+    min-height: 100vh;
+  }
+  h1 {
+    font-size: 48px;
+    color: #ff3c78;
+    letter-spacing: 4px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-shadow: 0 0 15px #ff3c78;
+    margin-bottom: 60px;
+  }
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 50px;
+  }
+  button {
+    background-color: #ff3c78;
+    border: none;
+    color: #121212;
+    padding: 18px 30px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 40px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(255,60,120,0.6);
+    transition: background 0.3s ease;
+    user-select: none;
+    min-width: 150px;
+  }
+  button:hover {
+    background-color: #ff668f;
+    box-shadow: 0 6px 20px rgba(255,102,143,0.8);
+    color: #fff;
+  }
+  .content-section {
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    background: #1f1f1f;
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255,60,120,0.3);
+    display: none;
+    text-align: left;
+    color: #ddd;
+  }
+  .content-section h2 {
+    color: #ff3c78;
+    font-size: 28px;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .content-section p {
+    line-height: 1.6;
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  .products-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: start;
+  }
+  .product-placeholder {
+    background: #292929;
+    flex: 1 1 200px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    color: #bbb;
+    font-style: italic;
+  }
+  footer {
+    color: #666;
+    font-size: 14px;
+    margin-top: 60px;
+    user-select: none;
+  }
+  @media (max-width: 500px) {
+    button {
+      min-width: 120px;
+      font-size: 18px;
+      padding: 14px 22px;
+    }
+  }
+</style>
+</head>
+<body>
+
+  <h1>cozyfy.jo</h1>
+
+  <div class="buttons">
+    <button data-target="tshirts">T-Shirts</button>
+    <button data-target="hoodies">Hoodies</button>
+    <button data-target="pants">Pants</button>
+    <button data-target="accessories">Accessories</button>
+    <button data-target="aboutus">About Us</button>
+    <button data-target="shopping">Shopping</button>
+    <button data-target="contactus">Contact Us</button>
+  </div>
+
+  <section id="tshirts" class="content-section">
+    <h2>T-Shirts</h2>
+    <div class="products-list">
+      <div class="product-placeholder">Image + Details for T-Shirt #1</div>
+      <div class="product-placeholder">Image + Details for T-Shirt #2</div>
+      <div class="product-placeholder">Image + Details for T-Shirt #3</div>
+    </div>
+  </section>
+
+  <section id="hoodies" class="content-section">
+    <h2>Hoodies</h2>
+    <div class="products-list">
+      <div class="product-placeholder">Image + Details for Hoodie #1</div>
+      <div class="product-placeholder">Image + Details for Hoodie #2</div>
+      <div class="product-placeholder">Image + Details for Hoodie #3</div>
+    </div>
+  </section>
+
+  <section id="pants" class="content-section">
+    <h2>Pants</h2>
+    <div class="products-list">
+      <div class="product-placeholder">Image + Details for Pants #1</div>
+      <div class="product-placeholder">Image + Details for Pants #2</div>
+      <div class="product-placeholder">Image + Details for Pants #3</div>
+    </div>
+  </section>
+
+  <section id="accessories" class="content-section">
+    <h2>Accessories</h2>
+    <div class="products-list">
+      <div class="product-placeholder">Image + Details for Accessory #1</div>
+      <div class="product-placeholder">Image + Details for Accessory #2</div>
+      <div class="product-placeholder">Image + Details for Accessory #3</div>
+    </div>
+  </section>
+
+  <section id="aboutus" class="content-section">
+    <h2>About Us</h2>
+    <p>Welcome to Cozyfy.jo — where comfort meets style. We’re passionate about delivering cozy, high-quality apparel that captures your personal vibe. From our latest hoodies and t-shirts to stylish accessories, every piece is made to keep you feeling confident and comfortable.</p>
+    <p>Based in Jordan, Cozyfy.jo is all about local pride and global inspiration. DM us on Instagram to explore the collection, ask questions, or place your order — we’re here for you. Enjoy shopping in the coziest way possible.</p>
+  </section>
+
+  <section id="shopping" class="content-section">
+    <h2>Shopping</h2>
+    <p>Explore our collections above by clicking on any category. Each category page will have the latest styles, prices, and size options coming soon. Stay tuned!</p>
+  </section>
+
+  <section id="contactus" class="content-section">
+    <h2>Contact Us</h2>
+    <p>Got questions? Reach out to us anytime!</p>
+    <p>Phone 1: +962 770 212 121</p>
+    <p>Phone 2: +962 795 152 041</p>
+    <p>Instagram: <a href="https://instagram.com/cozyfy.jo" target="_blank" style="color:#ff3c78;">@cozyfy.jo</a></p>
+  </section>
+
+  <footer>© 2025 Cozyfy</footer>
+
+<script>
+  const buttons = document.querySelectorAll('button[data-target]');
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const targetId = btn.getAttribute('data-target');
+      const section = document.getElementById(targetId);
+
+      if (section.style.display === 'block') {
+        section.style.display = 'none'; // hide if already shown
+      } else {
+        // hide all sections
+        document.querySelectorAll('.content-section').forEach(sec => sec.style.display = 'none');
+        // show target section
+        section.style.display = 'block';
+        // scroll to section smoothly
+        section.scrollIntoView({behavior: 'smooth'});
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
